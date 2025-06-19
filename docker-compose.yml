@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: seb
+      MONGO_INITDB_ROOT_PASSWORD: Seb%110978
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - abbaye11
+networks:
+  abbaye11:
+    name: abbaye11
+    external: true
