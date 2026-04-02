@@ -9,7 +9,7 @@ services:
       - "27017:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: seb
-      MONGO_INITDB_ROOT_PASSWORD: Seb%110978
+      MONGO_INITDB_ROOT_PASSWORD: x_x&xK+gN6V/u9A1234
     volumes:
       - mongodb_data:/data/db
     networks:
